@@ -1,7 +1,7 @@
 class add{
-public static void main(String[] args){
-int a = 20;
-int b = 40;
-System.out.println(a+b);
-}
+	public static void main(String []args){
+		int a = 34;
+		int b = 16;
+		System.out.println(a+b);
+	}
 }
