@@ -40,7 +40,7 @@ public class CustomValidationHandler extends ResponseEntityExceptionHandler {
 }
 ---------------------------------------------------------------------------------------------------------------
 
-hibernate jpa mysql application.properties file
+jpa mysql application.properties file
 
 spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
 spring.datasource.url=jdbc:mysql://localhost:3306/tryjpamyself?createDatabaseIfNotExist=true&useUnicode=true
@@ -55,20 +55,33 @@ spring.jpa.show-sql=true
 
 swagger UI dependency
 
-    <dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-ui</artifactId>
-			<version>1.5.12</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger2</artifactId>
-			<version>2.7.0</version>
-		</dependency>
-		<dependency>
-			<groupId>io.springfox</groupId>
-			<artifactId>springfox-swagger-ui</artifactId>
-			<version>2.7.0</version>
-		</dependency>
+    	<dependency>
+		<groupId>org.springdoc</groupId>
+		<artifactId>springdoc-openapi-ui</artifactId>
+		<version>1.5.12</version>
+	</dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger2</artifactId>
+		<version>2.7.0</version>
+	</dependency>
+	<dependency>
+		<groupId>io.springfox</groupId>
+		<artifactId>springfox-swagger-ui</artifactId>
+		<version>2.7.0</version>
+	</dependency>
 -------------------------------------------------------------------------------------------------
+
+hibernate and its version
+
+<hibernate.version>4.3.11.Final</hibernate.version>
+
+	<!-- Hibernate -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+----------------------------------------------------------------------------------------------------------
+
 
