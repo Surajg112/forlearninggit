@@ -139,3 +139,48 @@ docker build -t springbootdockerex:latest .
 docker run -p 8081:8080 springbootdockerex
 ------------------------------------------------------------------------------
 
+oAuth - SPRING SECURITY
+
+in spring initilizr select dependency
+-> OAuth2 Client [SECURITY]
+
+Steps-
+
+1.Google Console
+2.API & Services
+3.Credentials
+4.Create OAuth client ID
+5.Select as Web Application
+6.Give Application Name
+7.URI's- http://localhost:8080
+8.Redirect URI's- http://localhost:8080/login/oauth2/code/google
+9.Click on Create
+10.Copy the credentials ID and Secrete
+11.Create Spring Boot Project and add Outh Client Dependency
+
+application.yaml
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          google :
+            clientId: 498625524534-6slbdqv7ioqn8d8niafp8cb7itdsob0p.apps.googleusercontent.com
+            clientSecret: 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
+
+in main method
+
+	@Autowired
+	EmployeeRepository employeeRepositoryImpl;
+
+	@PostConstruct
+	public void saveData(){
+		List<Employee> employee = Stream.of(new Employee(11,"AKSHADA",65232),
+				new Employee(12,"SOPHIA",85232),
+				new Employee(13,"JOHN",64785)).collect(Collectors.toList());
+
+		employeeRepositoryImpl.saveAll(employee);
+
+	}
+-----------------------------------------------------------------------
