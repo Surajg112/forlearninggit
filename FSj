@@ -2,6 +2,8 @@ aws port number = 5000
 tomcat port number = 8080
 mongoDB port number = 27017
 mysql database port number = 3306
+PostgreSQL port number = 5432
+
 --------------------------------------------------------------------------------
 
 HTTP STATUS CODE
@@ -26,7 +28,5 @@ HTTP STATUS CODE
           **** 503 Service Unavailable
 504 Gateway Timeout
 ------------------------------------------------------------------------------------------
-
-
 
 
