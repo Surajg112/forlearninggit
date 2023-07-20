@@ -158,7 +158,7 @@ Steps-
 10.Copy the credentials ID and Secrete
 11.Create Spring Boot Project and add Outh Client Dependency
 
-application.yaml
+in resources file create application.yaml
 
 spring:
   security:
