@@ -3,6 +3,7 @@ tomcat port number = 8080
 mongoDB port number = 27017
 mysql database port number = 3306
 PostgreSQL port number = 5432
+Eureka Server port number = 8761
 
 --------------------------------------------------------------------------------
 
